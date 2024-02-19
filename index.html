@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User information</title>
+</head>
+<script>
+     function displayUserInfo() {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var email = document.getElementById("email").value;
+            var message = "Hi " + name + ", you are " + age + " years old and we will keep in touch via your email "+ email; 
+            alert(message);
+        }
+
+</script>
+<body>
+    <link rel="stylesheet" type="text/css" href="Src/Style1.css">
+    <h2><span style="color:red;">W</span><span style="color:yellow;">e</span> <span style="color:green;">l</span><span style="color:blue;">c</span><span style="color:violet;">o</span><span style="color:blue;">m</span><span style="color:red;">e</span> to our page!</h2>
+    <p> We are thrilled to have you here.<br>
+    Help us to tailor your experience by sharing a bit about yourself<br>
+    and lets make your time with us truly special!
+    </p>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <button type="button" onclick="displayUserInfo()">Submit</button>
+    </form>
+  
+</body>
+</html>
